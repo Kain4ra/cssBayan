@@ -17,10 +17,54 @@ body {
 }
 
 .bayan__title {
+  margin-bottom: 1.5rem;
   font-size: 2.5rem;
   text-align: center;
 }
 
+.bayan__input {
+  display: none;
+}
+
+.bayan__lable {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0.8rem;
+  border: 0.06rem solid black;
+}
+
+.bayan__lable:not(:last-child) {
+  border-bottom: none;
+}
+
+.bayan__des {
+  margin-bottom: 1.5rem;
+  width: 95%;
+  font-size: 2rem;
+}
+
+.bayan__icon {
+  width: 5%;
+  height: 1.8rem;
+  background-size: cover;
+  background-image: url(./assets/svg/plus.svg);
+  transition: all .3s;
+}
+
 .bayan__img {
-  max-width: 100%;
+  margin-bottom: 1.5rem;
+  width: 0%;
+  transition: all .3s;
+
+}
+
+.bayan__input:checked + .bayan__lable>.bayan__img {
+  display: block;
+  width: 60%;
+  opacity: 1;
+}
+
+.bayan__input:checked + .bayan__lable>.bayan__icon {
+  transform: rotate(45deg);
 }
