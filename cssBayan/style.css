@@ -89,7 +89,7 @@ body {
   }
 }
 
-@media (hover:hover) {
+@media (hover:hover), (min-width: 1920px) {
   .bayan__lable {
     color: blue;
     cursor: pointer;
